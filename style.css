@@ -1,0 +1,472 @@
+/**
+Theme Name: Astra Child
+Author: Andres Romero
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/*
+* {hyphens: auto;}
+*/
+
+.has-x-large-font-size,
+.has-large-font-size,
+.has-medium-font-size,
+.has-huge-font-size,
+.texto-principal-1,
+.texto-principal-2,
+[style*="font-size:30px"],
+[style*="font-size:45px"],
+[style*="font-size:57px"],
+[style*="font-size:60px"],
+[style*="font-size:36px"]  {
+    line-height: 1.1;
+}
+
+.admin-bar {
+    top: 32px;
+}
+.site-header  {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Boton Contactar del Menu*/
+/*----------------------------------------------------------------------------*/
+.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item {
+    line-height: 0;
+}
+.menu-item-84{
+    border-radius: 30px; /* Redondea los bordes */
+    height: 60px;
+    padding: 0 20px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    background-image: linear-gradient(269deg, #004494 0%, #00a5db 100%);
+}
+.menu-item-84 > .menu-link{
+    color: white !important;
+}
+/*----------------------------------------------------------------------------*/
+/* Menu y submenus del menu del header*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 1220px) and (min-width: 920px) {
+    #ast-desktop-header {
+        display: none !important;
+    }
+
+    #ast-mobile-header{
+        display: block !important;
+    }
+}
+
+.main-navigation #ast-hf-menu-1 .sub-menu {
+    background-image: linear-gradient(269deg, #00a5db 0%, #004494 100%) !important;
+}
+.main-navigation #ast-hf-menu-1 .sub-menu a{
+    color: white !important;
+}
+/*----------------------------------------------------------------------------*/
+/* PIE DE PAGINA*/
+/*----------------------------------------------------------------------------*/
+#menu-pie-de-pagina{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+#menu-pie-de-pagina a{
+    color: inherit;         
+    text-decoration: none; 
+}
+
+@media (max-width: 768px){
+    .ast-builder-grid-row-container-inner{
+        background-color: #009bcb;
+    }
+    .site-footer-above-section-1{
+        padding: 15px;
+        font-size: 20px;
+    }
+    #menu-pie-de-pagina{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #block-5, #block-6, #block-7, #block-8, #block-9, #block-10{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px){
+    #block-11, #block-12, #block-13{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina principal*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 768px){
+    .texto-principal-1 {
+        font-size: 40px !important;
+    }
+    .texto-principal-2 {
+        font-size: 20px !important;
+    }
+    .responsabilidad-social {
+        font-size: 25px !important;
+    }
+}
+img[src*="separador.png"] {
+    margin-top: 0;
+}
+
+.texto-enlace a{
+    text-decoration: none !important;
+}
+
+.texto-enlace a:hover{
+    color: black !important;
+}
+
+.config-card {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    overflow: hidden; /* Ocultar desbordamiento para bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    padding: 16px;
+    margin: 16px auto; /* Centrado y espaciado */
+    padding-left: 30px;
+}
+
+.servicios-li a {
+    text-decoration: none !important;
+    color: #00A5DB;
+    transition: color 0.7s ease; /* Transición de color suave */
+}
+
+.config-card {
+    transition: background-image 1.2s cubic-bezier(.165, .84, .44, 1); /* Transición de fondo suave */
+}
+
+.config-card:hover {
+    background-image: -webkit-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: -o-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: linear-gradient(39deg, #004494 0%, #00a5db 100%);
+    background-repeat: repeat-x;
+    border-radius: 0;
+}
+
+.config-card img {
+    opacity: 1;
+    transition: opacity 0.7s ease; /* Control de la duración y suavidad */
+}
+
+.config-card:hover img {
+    opacity: 0; /* La imagen se desvanece */
+}
+
+.config-card:hover .servicios-li a {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+.config-card:hover h2 {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+.config-card:hover p{
+    color: #ffffff;
+}
+
+.config-simple-card {
+    height: 670px;
+    background-image: linear-gradient(269deg, #004494 0%, #00a5db 100%);
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.config-simple-card img {
+    height: 400px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    object-fit: cover; /* Recorta la imagen para ocupar todo el espacio sin deformarse */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.config-simple-card:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+.config-simple-card-2 {
+    height: 570px;
+    background-image: linear-gradient(269deg, #004494 0%, #00a5db 100%);
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.config-simple-card-2 img {
+    height: 400px;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    object-fit: cover; /* Recorta la imagen para ocupar todo el espacio sin deformarse */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.config-simple-card-2:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+.config-simple-card-2 p {
+    padding: 15px;
+}
+
+.cuadrado-info {
+    padding: 20px !important;
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 18px 45px 0 rgba(0, 0, 0, .14);
+    border: none;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 782px) and (max-width: 1300px){
+    .cuadrado-info .has-x-large-font-size {
+        font-size: 24px !important;
+    }
+}
+
+.texto-info{
+    margin-bottom: -30px !important; /* Sin margen inferior */
+}
+
+@media (max-width: 768px){
+    .texto-info{
+        margin-bottom: 0px !important; /* Sin margen inferior */
+    }
+}
+
+.columna-mapiser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna-walter a{
+    text-decoration: none !important;
+}
+
+.columna-pardo a{
+    text-decoration: none !important;
+}
+
+.columna-insercion a{
+    text-decoration: none !important;
+}
+/*----------------------------------------------------------------------------*/
+/* Paginas del menu Servicios se llama destruccion por se han reutilizado los componentes*/
+/*----------------------------------------------------------------------------*/
+.columna-destruccion {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 18px 45px 10px rgba(0, 0, 0, .14);
+    border: none;
+    height: auto;
+}
+
+.columna-destruccion:hover{
+    background-image: -webkit-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: -o-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: linear-gradient(39deg, #004494 0%, #00a5db 100%);
+    background-repeat: repeat-x;
+    border-radius: 0;
+}
+
+.imagen-columna-destruccion {
+    margin: 20px;
+    opacity: 1;
+    transition: opacity 0.7s ease; /* Control de la duración y suavidad */
+}
+
+.columna-destruccion:hover .imagen-columna-destruccion {
+    opacity: 0; /* La imagen se desvanece */
+}
+
+.columna-destruccion:hover p {
+    color: white !important;
+}
+
+.columna-destruccion a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.columna-destruccion-interior{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 450px;
+}
+
+.enlace{
+    display: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pagina Historias de Exito*/   
+/*----------------------------------------------------------------------------*/
+.historia-exito a{
+    text-decoration: none !important;
+    color: #00a5db;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Pagina Mapiser*/   
+/*----------------------------------------------------------------------------*/
+.texto-mapiser a{
+    text-decoration: none !important;
+    color: #00a5db;
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina Mapiser*/   
+/*----------------------------------------------------------------------------*/
+.texto-mercado a{
+    text-decoration: none !important;
+    color: #00a5db;
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina de entradas NOTICIAS*/   
+/*----------------------------------------------------------------------------*/
+.hfeed{
+    background-color: white;
+}
+
+.ast-blog-layout-4-grid .ast-row{
+    display: block !important;
+}
+
+.ast-blog-layout-4-grid .ast-article-post {
+    width: 90% !important;
+}
+
+.ast-article-inner{
+    background-color: var(--ast-global-color-4) !important; 
+    border-radius: 0;
+    box-shadow: 0 18px 45px 10px rgba(0, 0, 0, .14);
+    border: none;
+    height: auto;
+
+}
+.ast-article-post .post-thumb-img-content img {
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+.ast-article-inner:hover{
+    background-image: -webkit-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: -o-linear-gradient(51deg, #004494 0%, #00a5db 100%);
+    background-image: linear-gradient(39deg, #004494 0%, #00a5db 100%);
+    background-repeat: repeat-x;
+    border-radius: 0;   
+}
+
+.ast-article-inner img {
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+.ast-article-inner:hover img {
+    opacity: 0.20;
+}
+
+.ast-article-inner:hover a {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+
+.ast-article-inner:hover p {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.texto-mapister-widget a{
+    text-decoration: none !important;
+    color: #00a5db;
+}
+
+.cat-item a{
+    text-decoration: none !important;
+    color: #00a5db;
+}
+/*----------------------------------------------------------------------------*/
+/* Pagina de contacto CONTACTAR*/   
+/*----------------------------------------------------------------------------*/
+.wp-block-contact-form-7-contact-form-selector{
+    background-color: white; /* Fondo blanco para la card */
+    padding: 20px; /* Espacio interior de la card */
+    border-radius: 0px; /* Bordes redondeados */
+    border: 2px solid #ddd; /* Borde sólido de 2px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+    margin: 20px auto; /* Centrado y separación vertical */
+}
+.wpcf7-text{
+    background-color: var(--ast-global-color-4) !important; /* Fondo blanco para la card */
+}
+
+.wpcf7-form-control{
+    background-color: var(--ast-global-color-4) !important; /* Fondo blanco para la card */
+}
+.btn--primary{
+    background-color: #00A5DB !important;
+}
+/*----------------------------------------------------------------------------*/
+/* Media Queries para los titulos*/
+/*----------------------------------------------------------------------------*/
+@media (max-width: 768px){
+    .titulo-destruccion {
+        font-size: 36px !important;
+    }
+    .titulo-pintura {
+        font-size: 36px !important;
+    }
+    .titulo-manipulado {
+        font-size: 36px !important;
+    }
+    .titulo-mudanza {
+        font-size: 36px !important;
+    }
+    .titulo-graffitis {
+        font-size: 36px !important;
+    }
+    .titulo-hosteleria {
+        font-size: 36px !important;
+    }
+    .titulo-historias{
+        font-size: 36px !important;
+    }
+    .titulo-historias-pardo{
+        font-size: 36px !important;
+    }
+    .titulo-historias-walter{
+        font-size: 36px !important;
+    }
+    .titulos-historias-asalto{
+        font-size: 36px !important;
+    }
+}
